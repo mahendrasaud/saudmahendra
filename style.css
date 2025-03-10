@@ -1,3 +1,4 @@
+/*For all */
 * {
     padding: 0;
     margin: 0;
@@ -64,58 +65,14 @@ nav a:hover {
     font-size: 25px;
 }
 
-.a1 {
-    width: 50vw;
+ul li {
+    list-style: none;
     display: inline-block;
-    text-align: center;
-    align-items: center;
+    padding: 10px;
 }
 
-.a2 {
-    height: 200px;
-    width: 200px;
-    background-image: url(/image/mahendra.webp);
-    background-size: cover;
-}
-.i1{
-    text-align: center;
-    width: 70vw;
-}
-
-.homebtn,
-.button {
-    height: 50px;
-    align-items: center;
-    text-align: center;
-    margin-left: 5%;
-}
-
-.Aboutbutton,
-.button {
-    height: 30px;
-    width: 150px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.Aboutbutton:hover,
-.button {
-    color: #fff;
-    background-color: #078dfa;
-    transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.717);
-}
-
-/* Click Animation */
-.Aboutbutton:active,
-.button {
-    transform: scale(0.95);
+nav ul li a.active {
+    color: rgb(195, 255, 0);
 }
 
 /* Animated gradient background */
@@ -133,7 +90,7 @@ body::before {
             #260806 75%,
             rgb(74, 3, 86) 100%);
     background-size: 400% 400%;
-    animation: gradientMove 20s ease infinite;
+    animation: gradientMove 10s ease infinite;
     z-index: -2;
 }
 
@@ -149,7 +106,7 @@ body::after {
         radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 2%, transparent 15%),
         radial-gradient(circle at 80% 20%, rgba(172, 183, 188, 0.617) 2%, transparent 15%);
     background-size: 30px 30px;
-    animation: particleMove 120s linear infinite;
+    animation: particleMove 40s linear infinite;
     z-index: -1;
 }
 
@@ -188,29 +145,71 @@ body::after {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     body::before {
-        animation-duration: 30s;
+        animation-duration: 40s;
         background-size: 300% 300%;
     }
 
     body::after {
         background-size: 20px 20px;
-        animation-duration: 180s;
+        animation-duration: 80s;
     }
 }
 
-
-ul li {
-    list-style: none;
+/*Index Css*/
+.a1 {
+    width: 50vw;
     display: inline-block;
-    padding: 10px;
+    text-align: center;
+    align-items: center;
 }
 
-nav ul li a.active {
-    color: rgb(195, 255, 0);
+.a2 {
+    height: 180px;
+    width: 178px;
+    background-image: url(/image/mahendra.webp);
+    background-size: cover;
 }
-.iaddjust{
+
+.iaddjust {
     height: 10vh;
 }
+
+.homebtn,
+.button {
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.Aboutbutton,
+.button {
+    height: 30px;
+    width: 150px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Aboutbutton:hover,
+.button {
+    color: #fff;
+    background-color: #078dfa;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.717);
+}
+
+/* Click Animation */
+.Aboutbutton:active,
+.button {
+    transform: scale(0.95);
+}
+/*About CSS*/
 .row1 {
     display: flex;
     align-items: center;
@@ -248,216 +247,9 @@ nav ul li a.active {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
-
-
-
-
-/* Footer Background Animation */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Footer Styling */
-.footer {
-    margin-top: auto;
-    background: linear-gradient(45deg, #ff416c, #007bff, #00c9ff);
-    background-size: 300% 300%;
-    animation: gradientAnimation 8s ease infinite;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
-}
-
-/* Social Icons Styling */
-.social-icons {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.social-icons a {
-    color: white;
-    font-size: 24px;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    display: inline-block;
-}
-
-/* Hover Animation */
-.social-icons a:hover {
-    color: #ffea00;
-    transform: scale(1.2) rotate(10deg);
-}
-
-/* Footer Text Animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.footer p {
-    animation: fadeIn 2s ease-in-out;
-}
-
-
-
-
-
-/*For Mobile phone */
-@media (max-width:550px) {
-
-    body {
-        height: 100%;
-        font-family: 'Times New Roman', Times, serif Arial, sans-serif;
-        min-height: 100%;
-        line-height: 1.5;
-    }
-
-    nav {
-        background-color: #d80ab2;
-        box-shadow: 0 0 20px rgb(10, 43, 47);
-        width: 100vw;
-    }
-
-    .menu {
-        display: block;
-        padding: 15px;
-    }
-
-    nav ul {
-        border-radius: 10px;
-        z-index: 1;
-        position: fixed;
-        top: 65px;
-        right: -100%;
-        height: 100vh;
-        width: 50%;
-        display: block;
-        background: #3f2382;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.651);
-    }
-
-
-    #click:checked~ul {
-        right: 0;
-
-    }
-
-    nav ul li {
-        display: block;
-        text-align: center;
-    }
-
-    nav a {
-        color: white;
-        padding: 15px;
-
-    }
-
-    nav ul li a:active {
-        color: aqua;
-    }
-
-    section {
-        padding: 5px;
-    }
-
-    .work {
-        display: block;
-    }
-
-    /* Footer Background Animation */
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-    /* Footer Styling */
-    .footer {
-
-        background: linear-gradient(45deg, #ff416c, #007bff, #00c9ff);
-        animation: gradientAnimation 8s ease infinite;
-        color: white;
-        position: fixed;
-        margin-top: auto;
-        padding: 3rem;
-    }
-
-    /* Social Icons Styling */
-    .social-icons {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
-
-
-    .social-icons a {
-        color: white;
-        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-        display: inline-block;
-    }
-
-    /* Hover Animation */
-    .social-icons a:hover {
-        color: #ffea00;
-        transform: scale(1.2) rotate(10deg);
-    }
-
-    /* Footer Text Animation */
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .footer p {
-        animation: fadeIn 2s ease-in-out;
-    }
-
-
-}
-
-/*Gallery */
-
+/*Gallery CSS*/
 .banner {
+    top: 100px;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -542,8 +334,144 @@ nav ul li a.active {
             rotatey(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translatez(180px);
     }
 }
-
 .g1 {
     width: 100vw;
+}
 
+
+/* Footer Background Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: auto;
+    background: linear-gradient(45deg, #ff416c, #007bff, #00c9ff);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/* Social Icons Styling */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Hover Animation */
+.social-icons a:hover {
+    color: #ffea00;
+    transform: scale(1.2) rotate(10deg);
+}
+/* Footer Text Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+
+
+/*For Mobile phone */
+@media (max-width:550px) {
+
+    body {
+        height: 100%;
+        font-family: 'Times New Roman', Times, serif Arial, sans-serif;
+        min-height: 100%;
+        line-height: 1.5;
+    }
+
+    nav {
+        z-index: 1;
+        position: fixed;
+        background-color: #d80ab2;
+        box-shadow: 0 0 20px rgb(10, 43, 47);
+        width: 100vw;
+    }
+
+    .menu {
+        display: block;
+        padding: 15px;
+    }
+
+    nav ul {
+        border-radius: 10px;
+        position: fixed;
+        top: 62px;
+        right: -100%;
+        height: 100vh;
+        width: 50%;
+        display: block;
+        background: #3f2382;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.651);
+    }
+
+
+    #click:checked~ul {
+        right: 0;
+
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        padding: 15px;
+
+    }
+
+    nav ul li a:active {
+        color: aqua;
+    }
+    section {
+        padding: 5px;
+    }
+
+    .work {
+        display: block;
+    }
 }
