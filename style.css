@@ -77,6 +77,10 @@ nav a:hover {
     background-image: url(/image/mahendra.webp);
     background-size: cover;
 }
+.i1{
+    text-align: center;
+    width: 70vw;
+}
 
 .homebtn,
 .button {
@@ -204,7 +208,9 @@ ul li {
 nav ul li a.active {
     color: rgb(195, 255, 0);
 }
-
+.iaddjust{
+    height: 10vh;
+}
 .row1 {
     display: flex;
     align-items: center;
