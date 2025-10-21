@@ -24,7 +24,7 @@ class Particle {
         this.size = Math.random() * 1 + 0.5; // Even smaller particle size
         this.speedX = Math.random() * 2 - 1; // Slower speed
         this.speedY = Math.random() * 2 - 1; // Slower speed
-        this.color = "rgba(0, 255, 0, 0.8)"; // Bright green
+        this.color = "rgba(0, 255, 0, 0,8)"; // Bright green
     }
 
     update() {
@@ -65,8 +65,8 @@ class Shape {
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 30 + 10; // Smaller shapes
         this.shapeType = Math.floor(Math.random() * 3);
-        this.speedX = 0.05; // Very slow movement speed
-        this.speedY = 0.05; // Very slow movement speed
+        this.speedX = 0.2; // Very slow movement speed
+        this.speedY = 0.09; // Very slow movement speed
     }
 
     update() {

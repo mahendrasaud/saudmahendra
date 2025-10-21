@@ -12,26 +12,24 @@ body {
     font-family: 'Times New Roman', Times, serif, cursive, Arial, sans-serif;
     min-height: 100%;
     overflow-x: hidden;
-    background: #111;
+    background: #000000;
     color: white;
 }
 
 main {
-    min-height: 75%;
+    min-height: 75vh;
 }
 
 nav {
     height: 60px;
-    background-color: rgb(221, 0, 255);
-    color: #fff;
+    background-color: rgb(58, 62, 83);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 20px rgb(193, 30, 214);
-    width: 100vw;
+    box-shadow: 0 0 20px rgba(20, 125, 85, 0.839);
     position: sticky;
-    top:0px;
-    z-index:1;
+    top: 0px;
+    z-index: 1;
 }
 
 nav a {
@@ -41,22 +39,20 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(243, 0, 199);
+    color: rgb(0, 243, 186);
     font-size: 20px;
 }
 
 .menu {
     float: right;
     line-height: 60px;
-    margin-right: 10px;
-    font-size: 30px;
-    color: white;
     display: none;
 }
 
-.menu:active {
+.menav a:active {
     color: black;
 }
+
 canvas {
     height: 100%;
     position: fixed;
@@ -75,35 +71,41 @@ canvas {
     align-items: center;
     font-size: 25px;
 }
+
 ul li {
     list-style: none;
     display: inline-block;
     margin: 15px;
 }
+
 nav ul li a.active {
     color: rgb(195, 255, 0);
 }
-.i1{
-    width: 70vw;
-}
+
 /*Index Css*/
+.i{
+    align-items: center;
+    width: 100vw;
+}
 .a1 {
     width: 50vw;
     display: inline-block;
     text-align: center;
     align-items: center;
 }
+
 .a2 {
     height: 180px;
     width: 178px;
     background-image: url(/image/mahendra.webp);
     background-size: cover;
 }
+
 .iaddjust {
     height: 10vh;
 }
-.homebtn,
-.button {
+
+.homebtn {
     height: 50px;
     align-items: center;
     text-align: center;
@@ -124,8 +126,8 @@ nav ul li a.active {
 }
 
 .Aboutbutton:hover,
-.button {
-    background-color:rgb(195, 255, 0);
+.button:hover {
+    background-color: rgb(195, 255, 0);
     transform: scale(1.1);
     box-shadow: 0 6px 10px rgba(255, 255, 255, 0.717);
 }
@@ -135,12 +137,12 @@ nav ul li a.active {
 .button {
     transform: scale(0.95);
 }
+
 /*About CSS*/
 .row1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .colume-side2 {
@@ -161,7 +163,6 @@ nav ul li a.active {
     padding: 10px;
     margin: 20px;
     box-shadow: 0 0 20px rgba(3, 226, 255, 0.881);
-
 }
 
 .work,
@@ -173,6 +174,7 @@ nav ul li a.active {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
+
 /*Gallery CSS*/
 .banner {
     top: 2px;
@@ -230,9 +232,7 @@ nav ul li a.active {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
 }
-
 
 @media screen and (max-width: 1023px) {
     .banner .slider {
@@ -260,10 +260,10 @@ nav ul li a.active {
             rotatey(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translatez(180px);
     }
 }
+
 .g1 {
     width: 100vw;
 }
-
 
 /* Footer Background Animation */
 @keyframes gradientAnimation {
@@ -282,17 +282,10 @@ nav ul li a.active {
 
 /* Footer Styling */
 .footer {
-    margin-top: auto;
-    background: linear-gradient(45deg, #ff416c, #007bff, #00c9ff);
-    background-size: 300% 300%;
-    animation: gradientAnimation 8s ease infinite;
-    color: white;
     text-align: center;
-    padding: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
-
 }
 
 /* Social Icons Styling */
@@ -316,6 +309,7 @@ nav ul li a.active {
     color: #ffea00;
     transform: scale(1.5) rotate(10deg);
 }
+
 /* Footer Text Animation */
 @keyframes fadeIn {
     0% {
@@ -333,13 +327,8 @@ nav ul li a.active {
     animation: fadeIn 2s ease-in-out;
 }
 
-
-
-
-
 /*For Mobile phone */
 @media (max-width:550px) {
-
     body {
         height: 100%;
         font-family: 'Times New Roman', Times, serif Arial, sans-serif;
@@ -349,7 +338,7 @@ nav ul li a.active {
 
     nav {
         z-index: 1;
-        background-color: #d80ab2;
+        background-color: #3d4756;
         box-shadow: 0 0 20px rgb(10, 43, 47);
         width: 100vw;
     }
@@ -367,11 +356,10 @@ nav ul li a.active {
         height: 100vh;
         width: 50%;
         display: block;
-        background: #3f2382;
+        background: #171321;
         transition: all 0.3s ease-in-out;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.651);
     }
-
 
     #click:checked~ul {
         right: 0;
@@ -384,17 +372,17 @@ nav ul li a.active {
     }
 
     nav a {
-        color: white;
         padding: 15px;
-
     }
 
     nav ul li a:active {
         color: aqua;
     }
-    .banner{
+
+    .banner {
         top: 50px;
     }
+
     section {
         padding: 5px;
     }
