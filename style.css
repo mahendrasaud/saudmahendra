@@ -22,14 +22,14 @@ main {
 
 nav {
     height: 60px;
-    background-color: rgb(58, 62, 83);
+    background-color: rgba(0, 4, 37, 0.683);
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 20px rgba(20, 125, 85, 0.839);
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index:1;
 }
 
 nav a {
@@ -49,7 +49,7 @@ nav a:hover {
     display: none;
 }
 
-.menav a:active {
+.menu:active {
     color: black;
 }
 
