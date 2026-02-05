@@ -176,6 +176,7 @@ nav ul li a.active {
 }
 
 /*Gallery CSS*/
+
 .banner {
     top: 2px;
     width: 100%;
@@ -215,7 +216,7 @@ nav ul li a.active {
 }
 
 .banner .slider .item img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
 }
@@ -260,11 +261,6 @@ nav ul li a.active {
             rotatey(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translatez(180px);
     }
 }
-
-.g1 {
-    width: 100vw;
-}
-
 /* Footer Background Animation */
 @keyframes gradientAnimation {
     0% {
