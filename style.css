@@ -99,7 +99,7 @@ nav ul li a.active {
 .a2 {
     height: 300px;
     width: 300px;
-    background-image: url(/image/mahendra.png);
+    background-image: url(/image/Mahendra.png);
     background-size: cover;
     border-radius: 50%;
 }
@@ -267,7 +267,7 @@ nav ul li a.active {
 .Document td{
     align-items: center;
     text-align: center;
-    height: 100px;
+    height: 101px;
     width: 20vw;
     background-color: #0d1a27;
     font-size: 18px;
