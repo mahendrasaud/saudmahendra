@@ -22,7 +22,7 @@ main {
 
 nav {
     height: 60px;
-    background-color: rgba(0, 4, 37, 0.683);
+    background-color: rgba(5, 2, 61, 0.323);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,12 +70,14 @@ canvas {
     display: flex;
     align-items: center;
     font-size: 25px;
+    
 }
 
 ul li {
     list-style: none;
     display: inline-block;
     margin: 15px;
+    border-radius: 2px solid blue;
 }
 
 nav ul li a.active {
@@ -260,6 +262,19 @@ nav ul li a.active {
         transform:
             rotatey(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translatez(180px);
     }
+}
+.Document td{
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 20vw;
+    background-color: #31155b6d;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px solid #83bdca;
+    box-shadow: 0 4px 6px rgb(199, 47, 47);
 }
 /* Footer Background Animation */
 @keyframes gradientAnimation {
