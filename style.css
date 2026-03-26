@@ -268,12 +268,12 @@ nav ul li a.active {
     text-align: center;
     height: 100px;
     width: 20vw;
-    background-color: #31155b6d;
+    background-color: #27057652;
     border: none;
     font-size: 18px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border-radius: 12px solid #83bdca;
+    border-radius: 12px solid #02d1ff;
     box-shadow: 0 4px 6px rgb(199, 47, 47);
 }
 /* Footer Background Animation */
