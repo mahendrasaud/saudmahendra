@@ -268,8 +268,7 @@ nav ul li a.active {
     text-align: center;
     height: 100px;
     width: 20vw;
-    background-color: #27057652;
-    border: none;
+    background-color: #0d1a27;
     font-size: 18px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
