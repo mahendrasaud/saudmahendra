@@ -97,10 +97,11 @@ nav ul li a.active {
 }
 
 .a2 {
-    height: 180px;
-    width: 178px;
-    background-image: url(/image/mahendra.webp);
+    height: 300px;
+    width: 300px;
+    background-image: url(/image/mahendra.png);
     background-size: cover;
+    border-radius: 50%;
 }
 
 .iaddjust {
@@ -268,11 +269,8 @@ nav ul li a.active {
     text-align: center;
     height: 100px;
     width: 20vw;
-    background-color: #27057652;
-    border: none;
+    background-color: #0d1a27;
     font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
     border-radius: 12px solid #02d1ff;
     box-shadow: 0 4px 6px rgb(199, 47, 47);
 }
