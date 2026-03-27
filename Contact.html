@@ -40,59 +40,14 @@
     <br><br>
     <main>
       <center>
-        <form action="https://sheetdb.io/api/v1/hyxfk1cglphfj" method="post">
-          <div id="table">
-            <br /><br />
-            <table>
-              <center><b>Message</b></center>
-              <br />
-              <tr>
-                <td><label for="name">Name:</label></td>
-                <td>
-                  <input
-                    type="name"
-                    name="data[Name]"
-                    id="name"
-                    placeholder="Enter your name"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td><br /></td>
-              </tr>
-              <tr>
-                <td><label for="email">E-mail:</label></td>
-                <td>
-                  <input
-                    type="email"
-                    name="data[E-mail]"
-                    id="email"
-                    placeholder="Enter your emai"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td><br /></td>
-              </tr>
-
-              <tr>
-                <td><label for="message">Message:</label></td>
-                <td>
-                  <input
-                    type="message"
-                    name="data[Message]"
-                    id="message"
-                    placeholder="Write your message"
-                  />
-                </td>
-              </tr>
-            </table>
-            <br />
-            <center>
-              <input type="submit" class="button" value="Contact" />
-            </center>
-          </div>
-        </form>
+      <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="e66814f0-91ba-4341-8302-1b12d97a796a">
+  <br><h1>Message</h1><br>
+  <input type="text" name="name" required placeholder="Enter Your Name"><br>
+  <input type="email" name="email" required placeholder="Enter Your Email"><br>
+  <textarea name="message" required placeholder="Your Message"></textarea><br><br>
+  <button class="Aboutbutton" type="submit" value="Send">Submit Form</button><br>
+</form>
       </center>
       <br /><br />
       <div style="margin: 20px">
